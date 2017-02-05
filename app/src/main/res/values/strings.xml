@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppContabilidad</string>
+    <string name="login_text">Escribe tu Contraseña</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Acceder</string>
+    <string name="contraseña">112358</string>
+    <string name="title_activity_overview">OverviewActivity</string>
+    <string name="general_overview_page_title">Overview</string>
+    <string name="summary_page_title">Summary</string>
+    <string name="budget_page_title">Budget</string>
+    <string name="chart_page_title">Chart</string>
+</resources>
