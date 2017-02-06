@@ -9,4 +9,7 @@
     <string name="summary_page_title">Summary</string>
     <string name="budget_page_title">Budget</string>
     <string name="chart_page_title">Chart</string>
+    <string name="empty_overview_title_text">There are no entries yet</string>
+    <string name="empty_summary_title_text">There are no entries yet</string>
+    <string name="empty_budget_title_text">There are no entries yet</string>
 </resources>
