@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OverviewActivity" />
+        <activity android:name=".MainContentActivity" />
         <activity android:name=".Fragments.OverviewFragment" />
         <activity android:name=".Fragments.SummaryFragment"></activity>
     </application>

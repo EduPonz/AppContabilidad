@@ -17,14 +17,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void accessApp(View view) {
-        mPasswordEditText = (EditText) findViewById(R.id.passwordEditText);
+        mPasswordEditText = (EditText) findViewById(R.id.login_password_editText);
         String password = mPasswordEditText.getText().toString();
-        Intent intent = new Intent(this, OverviewActivity.class);
+        Intent intent = new Intent(this, MainContentActivity.class);
         startActivity(intent);
     }
         /*
         if (password.equals(correctPassword)) {
-            Intent intent = new Intent(this, OverviewActivity.class);
+            Intent intent = new Intent(this, MainContentActivity.class);
             startActivity(intent);
         }
         */

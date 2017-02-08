@@ -6,14 +6,14 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.eduponz.appcontabilidad.Fragments.BudgetFragment;
 import com.example.eduponz.appcontabilidad.Fragments.ChartFragment;
-import com.example.eduponz.appcontabilidad.Fragments.GeneralOverviewFragment;
+import com.example.eduponz.appcontabilidad.Fragments.OverviewFragment;
 import com.example.eduponz.appcontabilidad.Fragments.SummaryFragment;
 
-public class OverviewPagerAdapter extends FragmentStatePagerAdapter {
+public class MainContentPagerAdapter extends FragmentStatePagerAdapter {
 
     int mNumOfTabs;
 
-    public OverviewPagerAdapter(FragmentManager fm, int NumOfTabs) {
+    public MainContentPagerAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
     }
@@ -28,7 +28,7 @@ public class OverviewPagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                return new GeneralOverviewFragment();
+                return new OverviewFragment();
             case 1:
                 return new SummaryFragment();
             case 2:

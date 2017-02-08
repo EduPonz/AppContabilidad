@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Options menu for the OverviewActivity -->
+<!-- Options menu for the MainContentActivity -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".OverviewActivity">
+    tools:context=".MainContentActivity"
+    android:id="@+id/main_content_menu">
 
     <item
         android:id="@+id/action_insert_dummy_data"

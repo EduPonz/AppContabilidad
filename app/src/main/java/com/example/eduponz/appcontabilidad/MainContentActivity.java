@@ -13,26 +13,26 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-public class OverviewActivity extends AppCompatActivity {
+public class MainContentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overview);
+        setContentView(R.layout.activity_main_content);
 
         // ******* TOOLBAR LAYOUT ************************************************
-        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.main_content_toolbar);
         setSupportActionBar(toolbar);
 
-        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        final TabLayout tabLayout = (TabLayout) findViewById(R.id.main_content_tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.general_overview_page_title)));
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.summary_page_title)));
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.budget_page_title)));
         tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.chart_page_title)));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final OverviewPagerAdapter adapter = new OverviewPagerAdapter
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.main_content_viewPager);
+        final MainContentPagerAdapter adapter = new MainContentPagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -78,13 +78,13 @@ public class OverviewActivity extends AppCompatActivity {
         final ListView mDrawerList;
         final String[] mDrawerStringList;
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_overview);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.main_content_drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.main_content_navigationDrawer_listView);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         toggle.syncState();
         mDrawerStringList = getResources().getStringArray(R.array.drawer_string_array);
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mDrawerStringList));
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.main_content_drawer_list_item, mDrawerStringList));
         // ************* DRAWER LAYOUT ******************************************
 
     }
@@ -93,7 +93,7 @@ public class OverviewActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu options from the res/menu/menu_catalog.xml file.
         // This adds menu items to the app bar.
-        getMenuInflater().inflate(R.menu.overview_menu, menu);
+        getMenuInflater().inflate(R.menu.main_content_menu, menu);
         return true;
     }
 

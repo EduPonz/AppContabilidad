@@ -2,11 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.eduponz.appcontabilidad.Fragments.GeneralOverviewFragment"
+    tools:context="com.example.eduponz.appcontabilidad.Fragments.OverviewFragment"
     android:background="#bfbfbf">
 
     <ListView
-        android:id="@+id/general_fragment_list"
+        android:id="@+id/overview_listView"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,31 +17,31 @@
 
     <!-- Empty View -->
     <RelativeLayout
-        android:id="@+id/fragment_overview_empty_view"
+        android:id="@+id/overview_empty_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
         <ImageView
-            android:id="@+id/empty_image"
+            android:id="@+id/overview_empty_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true" />
 
         <TextView
-            android:id="@+id/empty_title_text"
+            android:id="@+id/overview_empty_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/empty_image"
+            android:layout_below="@+id/overview_empty_image"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
             android:paddingTop="16dp"
-            android:text="@string/empty_overview_title_text"
+            android:text="@string/overview_empty_title_text"
             android:textAppearance="?android:textAppearanceMedium"/>
     </RelativeLayout>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/overview_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
