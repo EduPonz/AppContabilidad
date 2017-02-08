@@ -15,14 +15,9 @@
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
     <string-array name="drawer_string_array">
-        <item>1er Elemento</item>
-        <item>2º Elemento</item>
-        <item>3er Elemento</item>
-        <item>3er Elemento</item>
-        <item>3er Elemento</item>
-        <item>3er Elemento</item>
-        <item>3er Elemento</item>
-        <item>3er Elemento</item>
-        <item>3er Elemento</item>
+        <item>Fake element</item>
+        <item>Fake element</item>
+        <item>Fake element</item>
+        <item>Fake element</item>
     </string-array>
 </resources>
