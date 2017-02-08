@@ -19,9 +19,13 @@ public class LoginActivity extends AppCompatActivity {
     public void accessApp(View view) {
         mPasswordEditText = (EditText) findViewById(R.id.passwordEditText);
         String password = mPasswordEditText.getText().toString();
+        Intent intent = new Intent(this, OverviewActivity.class);
+        startActivity(intent);
+    }
+        /*
         if (password.equals(correctPassword)) {
             Intent intent = new Intent(this, OverviewActivity.class);
             startActivity(intent);
         }
+        */
     }
-}

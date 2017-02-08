@@ -12,4 +12,17 @@
     <string name="empty_overview_title_text">There are no entries yet</string>
     <string name="empty_summary_title_text">There are no entries yet</string>
     <string name="empty_budget_title_text">There are no entries yet</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string-array name="drawer_string_array">
+        <item>1er Elemento</item>
+        <item>2º Elemento</item>
+        <item>3er Elemento</item>
+        <item>3er Elemento</item>
+        <item>3er Elemento</item>
+        <item>3er Elemento</item>
+        <item>3er Elemento</item>
+        <item>3er Elemento</item>
+        <item>3er Elemento</item>
+    </string-array>
 </resources>
