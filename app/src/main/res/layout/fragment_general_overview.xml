@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:divider="#bfbfbf"
-        android:dividerHeight="10dp"/>
+        android:dividerHeight="10dp">
+    </ListView>
+
     <!-- Empty View -->
     <RelativeLayout
         android:id="@+id/fragment_overview_empty_view"

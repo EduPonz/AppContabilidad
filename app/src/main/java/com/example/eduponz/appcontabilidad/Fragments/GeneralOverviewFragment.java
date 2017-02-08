@@ -28,7 +28,8 @@ public class GeneralOverviewFragment extends Fragment {
         fakeList.setEmptyView(emptyView);
 
         fakeStringList = getResources().getStringArray(R.array.drawer_string_array);
-        fakeList.setAdapter(new ArrayAdapter<String>(getContext(), R.layout.fragment_overview_list_item, fakeStringList));
+        fakeList.setAdapter(new ArrayAdapter<String>(getContext(),
+                R.layout.fragment_overview_list_item, R.id.fragment_overview_list_item, fakeStringList));
 
         return rootView;
 
