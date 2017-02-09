@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AddEntryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_content_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/add_entry_page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Concept category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label Category -->
+            <TextView
+                android:text="@string/concept"
+                style="@style/CategoryStyle" />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_concept"
+                    android:hint="@string/hint_concept"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Description Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/description"
+                style="@style/CategoryStyle" />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+
+                <!-- Description field -->
+                <EditText
+                    android:id="@+id/edit_description"
+                    android:hint="@string/hint_description"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- DateCategory -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/date"
+                style="@style/CategoryStyle" />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+
+                <!-- Description field -->
+                <EditText
+                    android:id="@+id/edit_date"
+                    android:hint="@string/hint_date"
+                    android:inputType="date"
+                    style="@style/EditorFieldStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Currency category -->
+        <LinearLayout
+            android:id="@+id/container_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="@string/category_currency"
+                style="@style/CategoryStyle" />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Currency drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_currency"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Quantity category -->
+        <LinearLayout
+            android:id="@+id/container_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="@string/category_quantity"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Quantity field -->
+                <EditText
+                    android:id="@+id/edit_quantity"
+                    android:hint="@string/hint_quantity"
+                    android:inputType="numberDecimal"
+                    style="@style/EditorFieldStyle" />
+
+                <!-- Currency for the Quantity -->
+                <TextView
+                    android:id="@+id/label_quantity_currency"
+                    style="@style/EditCurrencyStyle"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
