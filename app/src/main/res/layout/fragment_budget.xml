@@ -5,10 +5,11 @@
     tools:context="com.example.eduponz.appcontabilidad.Fragments.BudgetFragment">
 
     <ListView
-        android:id="@+id/budget_listView"
+        android:id="@+id/fragment_budget_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <!--- Empty View -->
     <RelativeLayout
         android:id="@+id/budget_empty_view"
         android:layout_width="wrap_content"
@@ -32,4 +33,12 @@
             android:text="@string/budget_empty_title_text"
             android:textAppearance="?android:textAppearanceMedium"/>
     </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/budget_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin" />
 </RelativeLayout>

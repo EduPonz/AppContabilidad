@@ -16,16 +16,16 @@ public class OverviewFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_overview, container, false);
 
-        final ListView fakeList;
+        final ListView fakeSummaryList;
         final String[] fakeStringList;
 
-        fakeList = (ListView) rootView.findViewById(R.id.overview_listView);
+        fakeSummaryList = (ListView) rootView.findViewById(R.id.overview_summary_listView);
 
         View emptyView = rootView.findViewById(R.id.overview_empty_view);
-        fakeList.setEmptyView(emptyView);
+        fakeSummaryList.setEmptyView(emptyView);
 
-        fakeStringList = getResources().getStringArray(R.array.drawer_string_array);
-        fakeList.setAdapter(new ArrayAdapter<String>(getContext(),
+        fakeStringList = getResources().getStringArray(R.array.fake_string_array);
+        fakeSummaryList.setAdapter(new ArrayAdapter<String>(getContext(),
                 R.layout.fragment_overview_list_item,
                 R.id.fragment_overview_list_item_concept_textView, fakeStringList));
 

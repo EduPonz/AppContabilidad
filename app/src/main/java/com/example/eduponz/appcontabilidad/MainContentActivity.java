@@ -83,7 +83,7 @@ public class MainContentActivity extends AppCompatActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         toggle.syncState();
-        mDrawerStringList = getResources().getStringArray(R.array.drawer_string_array);
+        mDrawerStringList = getResources().getStringArray(R.array.fake_string_array);
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.main_content_drawer_list_item, mDrawerStringList));
         // ************* DRAWER LAYOUT ******************************************
 

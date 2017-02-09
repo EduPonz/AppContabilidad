@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">AppContabilidad</string>
-    <string name="login_text">Escribe tu Contraseña</string>
-    <string name="password_hint">Contraseña</string>
-    <string name="login_button">Acceder</string>
+    <string name="login_text">Write you password</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Sign in</string>
     <string name="password">112358</string>
     <string name="title_activity_overview">OverviewActivity</string>
     <string name="general_overview_page_title">Overview</string>
@@ -14,7 +14,7 @@
     <string name="budget_empty_title_text">Budget There are no entries yet</string>
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
-    <string-array name="drawer_string_array">
+    <string-array name="fake_string_array">
         <item>Fake element</item>
         <item>Fake element</item>
         <item>Fake element</item>

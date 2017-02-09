@@ -2,16 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.eduponz.appcontabilidad.Fragments.OverviewFragment"
-    android:background="#bfbfbf">
+    android:orientation="vertical"
+    android:background="#d1d1d1"
+    tools:context="com.example.eduponz.appcontabilidad.Fragments.OverviewFragment">
 
     <ListView
-        android:id="@+id/overview_listView"
-        android:layout_margin="10dp"
+        android:id="@+id/overview_summary_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:divider="#bfbfbf"
+        android:divider="#d1d1d1"
         android:dividerHeight="10dp">
     </ListView>
 

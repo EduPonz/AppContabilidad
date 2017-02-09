@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/fragment_summary_list_item_date_textView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="1/1/17">
+    </TextView>
+
+    <TextView
+        android:id="@+id/fragment_summary_list_item_concept_textView"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/fragment_summary_list_item_quantity_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="30€">
+    </TextView>
+
+</LinearLayout>
