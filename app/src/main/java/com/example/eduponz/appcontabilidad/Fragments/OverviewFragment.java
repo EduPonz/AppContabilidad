@@ -1,6 +1,8 @@
 package com.example.eduponz.appcontabilidad.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.eduponz.appcontabilidad.AddEntryActivity;
 import com.example.eduponz.appcontabilidad.R;
 
 public class OverviewFragment extends Fragment {
@@ -28,6 +31,15 @@ public class OverviewFragment extends Fragment {
         fakeSummaryList.setAdapter(new ArrayAdapter<String>(getContext(),
                 R.layout.fragment_overview_list_item,
                 R.id.fragment_overview_list_item_concept_textView, fakeStringList));
+
+        FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.overview_fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AddEntryActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return rootView;
 

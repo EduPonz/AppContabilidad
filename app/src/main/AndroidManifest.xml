@@ -16,7 +16,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainContentActivity" />
-        <activity android:name=".AddEntryActivity"></activity>
+        <activity
+            android:name=".AddEntryActivity"
+            android:parentActivityName=".MainContentActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainContentActivity" />
+        </activity>
+        <activity android:name=".BudgetEntryActivity"
+            android:parentActivityName=".MainContentActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainContentActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -15,15 +15,17 @@
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
     <string name="hint_concept">Concept</string>
-    <string name="concept">Concept</string>
-    <string name="description">Description</string>
-    <string name="hint_description">Description</string>
-    <string name="category_currency">Currency</string>
-    <string name="category_quantity">Quantity</string>
+    <string name="concept">CONCEPT</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="hint_description">Description (optional)</string>
+    <string name="category_currency">CURRENCY</string>
+    <string name="category_quantity">QUANTITY</string>
     <string name="hint_quantity">Quantity</string>
-    <string name="date">Date</string>
+    <string name="date">DATE</string>
     <string name="hint_date">Date</string>
     <string name="add_entry_page_title">Add Entry</string>
+    <string name="paid_with">PAID WITH</string>
+    <string name="budget_entry_page_title">Budget Entry</string>
     <string-array name="fake_string_array">
         <item>Fake element</item>
         <item>Fake element</item>
