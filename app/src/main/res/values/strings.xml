@@ -29,6 +29,7 @@
     <string name="add_entry_expense_radioButton">Expense</string>
     <string name="add_entry_income_radioButton">Income</string>
     <string name="type_of_entry">TYPE OF ENTRY</string>
+    <string name="pick_date">Select Date</string>
     <string-array name="fake_string_array">
         <item>Fake element</item>
         <item>Fake element</item>
