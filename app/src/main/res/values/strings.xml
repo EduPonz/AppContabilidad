@@ -26,6 +26,9 @@
     <string name="add_entry_page_title">Add Entry</string>
     <string name="paid_with">PAID WITH</string>
     <string name="budget_entry_page_title">Budget Entry</string>
+    <string name="add_entry_expense_radioButton">Expense</string>
+    <string name="add_entry_income_radioButton">Income</string>
+    <string name="type_of_entry">TYPE OF ENTRY</string>
     <string-array name="fake_string_array">
         <item>Fake element</item>
         <item>Fake element</item>

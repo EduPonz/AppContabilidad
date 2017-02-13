@@ -36,6 +36,7 @@ public class AccountDbHelper extends  SQLiteOpenHelper {
         String SQL_CREATE_EXPENSES_TABLE = "CREATE TABLE " + ExpenseEntry.TABLE_NAME + " ("
                 + ExpenseEntry._ID + " INTEGER PRIMARY KEY,"
                 + ExpenseEntry.COLUMN_USER + " TEXT NOT NULL,"
+                + ExpenseEntry.COLUMN_EXPENSE_INCOME + " INTEGER NOT NULL,"
                 + ExpenseEntry.COLUMN_CONCEPT + " TEXT NOT NULL,"
                 + ExpenseEntry.COLUMN_DESCRIPTION + " TEXT,"
                 + ExpenseEntry.COLUMN_PAID_WITH + " TEXT NOT NULL,"
@@ -51,6 +52,7 @@ public class AccountDbHelper extends  SQLiteOpenHelper {
         String SQL_CREATE_BUDGET_TABLE = "CREATE TABLE " + BudgetEntry.TABLE_NAME + " ("
                 + BudgetEntry._ID + " INTEGER PRIMARY KEY,"
                 + BudgetEntry.COLUMN_USER + " TEXT NOT NULL,"
+                + BudgetEntry.COLUMN_EXPENSE_INCOME + " INTEGER NOT NULL,"
                 + BudgetEntry.COLUMN_CONCEPT + " TEXT NOT NULL,"
                 + BudgetEntry.COLUMN_DESCRIPTION + " TEXT,"
                 + BudgetEntry.COLUMN_CURRENCY + " TEXT NOT NULL,"
@@ -64,7 +66,8 @@ public class AccountDbHelper extends  SQLiteOpenHelper {
         String SQL_CREATE_CONCEPT_TABLE = "CREATE TABLE " + ConceptEntry.TABLE_NAME + " ("
                 + ConceptEntry._ID + " INTEGER PRIMARY KEY,"
                 + ConceptEntry.COLUMN_USER + " TEXT NOT NULL,"
-                + ConceptEntry.COLUMN_CONCEPT + " TEXT NOT NULL)";
+                + ConceptEntry.COLUMN_CONCEPT + " TEXT NOT NULL,"
+                + ConceptEntry.COLUMN_EXPENSE_INCOME + " INTEGER NOT NULL)";
 
         db.execSQL(SQL_CREATE_CONCEPT_TABLE);
         /********************************* CONCEPT TABLE ************************************/

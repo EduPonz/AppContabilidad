@@ -137,6 +137,12 @@ public class AccountProvider extends ContentProvider {
             throw new IllegalArgumentException("Expense requires a user");
         }
 
+        // Check that the expense_income is 1 or 2
+        int expense_income = values.getAsInteger(ExpenseEntry.COLUMN_EXPENSE_INCOME);
+        if (expense_income != 1 && expense_income != 2) {
+            throw new IllegalArgumentException("Expense requires a expense_income");
+        }
+
         // Check that the concept is not null
         String concept = values.getAsString(ExpenseEntry.COLUMN_CONCEPT);
         if (concept == null) {
@@ -189,6 +195,12 @@ public class AccountProvider extends ContentProvider {
             throw new IllegalArgumentException("Budget requires a user");
         }
 
+        // Check that the expense_income is 1 or 2
+        int expense_income = values.getAsInteger(BudgetEntry.COLUMN_EXPENSE_INCOME);
+        if (expense_income != 1 && expense_income != 2) {
+            throw new IllegalArgumentException("Budget requires a expense_income");
+        }
+
         // Check that the concept is not null
         String concept = values.getAsString(BudgetEntry.COLUMN_CONCEPT);
         if (concept == null) {
@@ -233,6 +245,12 @@ public class AccountProvider extends ContentProvider {
         String concept = values.getAsString(ConceptEntry.COLUMN_CONCEPT);
         if (concept == null) {
             throw new IllegalArgumentException("Concept requires a concept");
+        }
+
+        // Check that the expense_income is 1 or 2
+        int expense_income = values.getAsInteger(ConceptEntry.COLUMN_EXPENSE_INCOME);
+        if (expense_income != 1 && expense_income != 2) {
+            throw new IllegalArgumentException("Concept requires a expense_income");
         }
 
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
@@ -341,6 +359,15 @@ public class AccountProvider extends ContentProvider {
             }
         }
 
+        // If the {@link ExpenseEntry#COLUMN_EXPENSE_INCOME} key is present,
+        // check that the expense_income value is 1 or 2.
+        if (values.containsKey(ExpenseEntry.COLUMN_EXPENSE_INCOME)) {
+            int expense_income = values.getAsInteger(ExpenseEntry.COLUMN_EXPENSE_INCOME);
+            if (expense_income != 1 && expense_income != 2) {
+                throw new IllegalArgumentException("Expense requires a expense_income");
+            }
+        }
+
         // If the {@link ExpenseEntry#COLUMN_CONCEPT} key is present,
         // check that the concept value is not null.
         if (values.containsKey(ExpenseEntry.COLUMN_CONCEPT)) {
@@ -414,6 +441,15 @@ public class AccountProvider extends ContentProvider {
             }
         }
 
+        // If the {@link BudgetEntry#COLUMN_EXPENSE_INCOME} key is present,
+        // check that the expense_income value is 1 or 2.
+        if (values.containsKey(BudgetEntry.COLUMN_EXPENSE_INCOME)) {
+            int expense_income = values.getAsInteger(BudgetEntry.COLUMN_EXPENSE_INCOME);
+            if (expense_income != 1 && expense_income != 2) {
+                throw new IllegalArgumentException("Budget requires a expense_income");
+            }
+        }
+
         // If the {@link BudgetEntry#COLUMN_CONCEPT} key is present,
         // check that the concept value is not null.
         if (values.containsKey(BudgetEntry.COLUMN_CONCEPT)) {
@@ -475,6 +511,15 @@ public class AccountProvider extends ContentProvider {
             String concept = values.getAsString(ConceptEntry.COLUMN_CONCEPT);
             if (concept == null) {
                 throw new IllegalArgumentException("Concept requires a concept");
+            }
+        }
+
+        // If the {@link ConceptEntry#COLUMN_EXPENSE_INCOME} key is present,
+        // check that the expense_income value is 1 or 2.
+        if (values.containsKey(ConceptEntry.COLUMN_EXPENSE_INCOME)) {
+            int expense_income = values.getAsInteger(ConceptEntry.COLUMN_EXPENSE_INCOME);
+            if (expense_income != 1 && expense_income != 2) {
+                throw new IllegalArgumentException("Concept requires a expense_income");
             }
         }
 

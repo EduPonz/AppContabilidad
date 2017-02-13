@@ -25,6 +25,37 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Expense-Income category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/type_of_entry"
+                android:layout_weight="1"
+                style="@style/CategoryStyle" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/add_entry_expense_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_entry_expense_radioButton"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/add_entry_income_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_entry_income_radioButton"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+        </LinearLayout>
+
         <!-- Concept category -->
         <LinearLayout
             android:layout_width="match_parent"

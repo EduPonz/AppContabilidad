@@ -34,6 +34,7 @@ public class AccountContract {
         public static final String TABLE_NAME = "expenses";
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_USER = "user";
+        public static final String COLUMN_EXPENSE_INCOME = "expense_income";
         public static final String COLUMN_CONCEPT = "concept";
         public static final String COLUMN_DESCRIPTION = "description";
         public static final String COLUMN_PAID_WITH = "paid_with";
@@ -58,6 +59,7 @@ public class AccountContract {
         public static final String TABLE_NAME = "budget";
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_USER = "user";
+        public static final String COLUMN_EXPENSE_INCOME = "expense_income";
         public static final String COLUMN_CONCEPT = "concept";
         public static final String COLUMN_DESCRIPTION = "description";
         public static final String COLUMN_CURRENCY = "currency";
@@ -80,6 +82,7 @@ public class AccountContract {
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_USER = "user";
         public static final String COLUMN_CONCEPT = "concept";
+        public static final String COLUMN_EXPENSE_INCOME = "expense_income";
     }
 
     public static abstract class CurrencyEntry implements BaseColumns {

@@ -25,6 +25,38 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Expense-Income category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/type_of_entry"
+                android:layout_weight="1"
+                style="@style/CategoryStyle" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/add_entry_expense_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_entry_expense_radioButton"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/add_entry_income_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_entry_income_radioButton"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+        </LinearLayout>
+
         <!-- Concept category -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -119,16 +151,32 @@
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:paddingLeft="4dp"
                 android:orientation="vertical">
 
-                <!-- Description field -->
-                <EditText
-                    android:id="@+id/edit_date"
-                    android:hint="@string/hint_date"
-                    android:inputType="date"
-                    style="@style/EditorFieldStyle" />
+                <!-- Date picker field -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pick_date"
+                    android:onClick="showDatePickerDialog"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="12/5/2016"/>
             </LinearLayout>
         </LinearLayout>
 
