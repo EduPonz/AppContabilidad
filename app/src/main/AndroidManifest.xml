@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label=""
+        android:label="Accounting"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
@@ -33,6 +33,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainContentActivity" />
         </activity>
+        <provider
+            android:name=".data.AccountProvider"
+            android:authorities="com.example.eduponz.appcontabilidad"
+            android:exported="false" />
+        <provider
+            android:name=".data.UserProvider"
+            android:authorities="com.example.eduponz.appcontabilidad"
+            android:exported="false" />
     </application>
 
 </manifest>

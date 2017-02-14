@@ -8,12 +8,22 @@
     android:id="@+id/main_content_menu">
 
     <item
-        android:id="@+id/action_insert_dummy_data"
-        android:title="hola"
+        android:id="@+id/action_insert_dummy_expense"
+        android:title="@string/insert_dummy_expense"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_delete_all_entries"
-        android:title="culo"
+        android:id="@+id/action_insert_dummy_budget_entry"
+        android:title="@string/insert_dummy_budget_entry"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_all_expenses"
+        android:title="@string/delete_all_expenses"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_all_budget_entries"
+        android:title="@string/delete_all_budget_entries"
         app:showAsAction="never" />
 </menu>

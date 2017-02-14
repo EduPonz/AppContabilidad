@@ -40,7 +40,7 @@ public class AccountDbHelper extends  SQLiteOpenHelper {
                 + ExpenseEntry.COLUMN_CONCEPT + " TEXT NOT NULL,"
                 + ExpenseEntry.COLUMN_DESCRIPTION + " TEXT,"
                 + ExpenseEntry.COLUMN_PAID_WITH + " TEXT NOT NULL,"
-                + ExpenseEntry.COLUMN_DATE + " INTEGER NOT NULL,"
+                + ExpenseEntry.COLUMN_DATE + " TEXT NOT NULL,"
                 + ExpenseEntry.COLUMN_CURRENCY + " TEXT NOT NULL,"
                 + ExpenseEntry.COLUMN_QUANTITY + " INTEGER NOT NULL)";
 

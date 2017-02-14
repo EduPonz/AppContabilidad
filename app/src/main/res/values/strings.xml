@@ -30,6 +30,20 @@
     <string name="add_entry_income_radioButton">Income</string>
     <string name="type_of_entry">TYPE OF ENTRY</string>
     <string name="pick_date">Select Date</string>
+    <string name="toast_wrong_selected_date">Cannot Select a future date</string>
+    <string name="add_entry_date_textView_default">No date</string>
+    <string name="action_save">Save</string>
+    <string name="add_entry_unable_save">Some non-optional fields are empty</string>
+    <string name="add_entry_saved">Entry saved</string>
+    <string name="insert_dummy_expense">Insert dummy expense</string>
+    <string name="insert_dummy_budget_entry">Insert dummy budget entry</string>
+    <string name="delete_all_expenses">Delete all expenses</string>
+    <string name="delete_all_expenses_dialog_msg">Delete all entries?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_all_expenses_failed">Delete all expenses failed</string>
+    <string name="editor_delete_all_expenses_successful">All entries deleted</string>
+    <string name="delete_all_budget_entries">Delete all budget entries</string>
     <string-array name="fake_string_array">
         <item>Fake element</item>
         <item>Fake element</item>
