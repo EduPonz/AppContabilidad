@@ -26,7 +26,12 @@ public class MainContentActivity extends AppCompatActivity {
 
     // a static variable to get a reference of our application context
     public static Context contextOfApplication;
-    private int tabPosition;
+    public static int tabPosition;
+    public static final int TAB_OVERVIEW = 0;
+    public static final int TAB_SUMMARY = 1;
+    public static final int TAB_BUDGET = 2;
+    public static final int TAB_CHART = 3;
+
     public static Context getContextOfApplication()
     {
         return contextOfApplication;
@@ -62,22 +67,22 @@ public class MainContentActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
                 switch (tab.getPosition()) {
-                    case 0:
+                    case TAB_OVERVIEW:
                         toolbar.setTitle(R.string.general_overview_page_title);
                         tabPosition = 0;
                         invalidateOptionsMenu();
                         break;
-                    case 1:
+                    case TAB_SUMMARY:
                         toolbar.setTitle(R.string.summary_page_title);
                         tabPosition = 1;
                         invalidateOptionsMenu();
                         break;
-                    case 2:
+                    case TAB_BUDGET:
                         toolbar.setTitle(R.string.budget_page_title);
                         tabPosition = 2;
                         invalidateOptionsMenu();
                         break;
-                    case 3:
+                    case TAB_CHART:
                         toolbar.setTitle(R.string.chart_page_title);
                         tabPosition = 3;
                         invalidateOptionsMenu();

@@ -11,9 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import com.example.eduponz.appcontabilidad.AddEntryActivity;
-import com.example.eduponz.appcontabilidad.BudgetEntryActivity;
 import com.example.eduponz.appcontabilidad.R;
 
 
@@ -39,7 +37,7 @@ public class BudgetFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), BudgetEntryActivity.class);
+                Intent intent = new Intent(getActivity(), AddEntryActivity.class);
                 startActivity(intent);
             }
         });

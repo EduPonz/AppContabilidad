@@ -1,6 +1,7 @@
 package com.example.eduponz.appcontabilidad;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
 import android.renderscript.Sampler;
 import android.support.v4.app.DialogFragment;
@@ -12,10 +13,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eduponz.appcontabilidad.Fragments.DatePickerFragment;
+import com.example.eduponz.appcontabilidad.Fragments.SummaryFragment;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -35,7 +38,17 @@ public class AddEntryActivity extends AppCompatActivity implements DatePickerDia
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        toolbar.setTitle(R.string.add_expense_income);
         /****************************** TOOLBAR **********************************/
+
+        if (MainContentActivity.tabPosition == MainContentActivity.TAB_BUDGET){
+            View paid_with = findViewById(R.id.paid_with_linearLayout);
+            paid_with.setVisibility(LinearLayout.GONE);
+            View date = findViewById(R.id.date_linearLayout);
+            date.setVisibility(LinearLayout.GONE);
+            toolbar.setTitle(R.string.add_budget_entry);
+            MainContentActivity.tabPosition = MainContentActivity.TAB_OVERVIEW;
+        }
 
     }
 
